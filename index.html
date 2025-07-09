@@ -1,0 +1,94 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QRIS Payment</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }body, html {
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  animation: backgroundShift 10s infinite alternate;
+}
+
+@keyframes backgroundShift {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.qris-img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease-in-out;
+}
+
+.qris-img:hover {
+  transform: scale(1.05);
+}
+
+.payment-info {
+  margin-top: 20px;
+  font-size: 1.2em;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+
+.payment-info p {
+  margin: 10px 0;
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  color: rgba(255,255,255,0.6);
+  font-size: 0.9em;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">Pembayaran via QRIS</div>
+    <img src="https://files.catbox.moe/7f3mdj.jpg" alt="QRIS Payment" class="qris-img" />
+    <div class="payment-info">
+      <p><strong>DANA:</strong> 087864252521</p>
+      <p><strong>GOPAY:</strong> Tidak tersedia</p>
+      <p><strong>OVO:</strong> Tidak tersedia</p>
+    </div>
+  </div>
+  <footer>&copy; 2025 Pembayaran Aman & Mudah</footer>
+</body>
+</html>
